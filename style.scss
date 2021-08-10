@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+  }
+  
+.header-back {
+width: 100%;
+background: #2d3e49;
+height: 53px;
+}
+
+.header {
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 2fr;
+height: 53px;
+padding: 0 10px;
+}
+
+.main-content {
+height: 100vh;
+background: #f5f5f5;
+}
+
+.right-side {
+display: flex;
+justify-content: flex-end;
+}
+
+.header-nav {
+    display: flex;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-decoration: none;
+        width: 70px;
+        div {
+            font-family: Helvetica Neue;
+            font-size: 12px;
+            color: #c9d1d7;
+        }
+        i {
+            font-size: 20px;
+            padding-bottom: 4px;
+        }
+        .notification {
+            position: absolute;
+            top: 4px;
+            right: 15px;
+            background: #dc565b;
+            color: #fff;
+            width: fit-content;
+            height: 18px;
+            padding: 0 6px 0 4px;
+            
+            border-radius: 50%;
+            text-align: center;
+            
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+
+.profiles {
+    display: flex;
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 7px;
+        margin-top: auto;
+        width: 70px;
+        .icon-arrow {
+            font-size: 6.7px;
+        }
+    }
+}
+
+.prof-pic {
+    height: 25px;
+    width: 25px;
+    background: #3072ac;
+    border: 1px solid #c9d1d7;
+    border-radius: 50%;
+    padding-bottom: 1px;
+}
+
+.border {
+    width: 1px;
+    height: auto;
+    background: #606f7b;
+}
+
+.icon-menu {
+    margin-bottom: 4px;
+}
+
+.prof-txt {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    color: #c9d1d7;
+}
+
+.free {
+    text-decoration: none;
+    font-size: 12px;
+    color: #d8cda8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 13px;
+}
+
+/* Searchbox START*/
+.search-box {
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #f1f2f5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    input {
+        font-size: 14px;
+        border: 0;
+        background: transparent;
+        padding: 0 12px 0 30px;
+        width: 238px;
+        height: 32px;
+        &:focus-visible {
+            outline: none;
+            }
+        }
+    svg {
+        position: absolute;
+        left: 10px;
+    }
+}
+  
+  /* Searchbox END*/
+  

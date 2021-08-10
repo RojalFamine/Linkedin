@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3rzgrv');
+  src:  url('fonts/icomoon.eot?3rzgrv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3rzgrv') format('truetype'),
+    url('fonts/icomoon.woff?3rzgrv') format('woff'),
+    url('fonts/icomoon.svg?3rzgrv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+  color: #c9d1d7;
+}
+.icon-arrow:before {
+  content: "\e901";
+  color: #c9d1d7;
+}
+.icon-notification:before {
+  content: "\e902";
+  color: #c9d1d7;
+}
+.icon-chat:before {
+  content: "\e903";
+  color: #c9d1d7;
+}
+.icon-job:before {
+  content: "\e904";
+  color: #c9d1d7;
+}
+.icon-friends:before {
+  content: "\e905";
+  color: #c9d1d7;
+}
+.icon-home:before {
+  content: "\e906";
+  color: #c9d1d7;
+}
