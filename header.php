@@ -1,5 +1,5 @@
 <div class="header-back">
-    <div class="header">
+    <div class="header container">
         <div class="left-side">
             <img src="inlogo.svg" alt="logo" class="logo" />
             <form action="">
