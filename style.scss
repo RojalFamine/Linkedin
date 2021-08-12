@@ -1,8 +1,14 @@
 $font: 'Roboto', sans-serif;
 $linkGrey: #707070;
+$linkDarkGrey: #606F7B;
+$linkBlue: #3072AC;
+$linkBlack: #191919;
 
 body {
     margin: 0;
+}
+a {
+    text-decoration: none;
 }
   
 .header-back {
@@ -21,7 +27,7 @@ body {
 }
 
 .main-content {
-    height: 100vh;
+    height: 2000px;
     background: #f5f5f5;
 }
 
@@ -32,6 +38,7 @@ body {
 
 .header-nav {
     display: flex;
+    
     a {
         display: flex;
         flex-direction: column;
@@ -40,6 +47,7 @@ body {
         position: relative;
         text-decoration: none;
         width: 70px;
+
         div {
             font-family: $font;
             font-size: 12px;
@@ -70,6 +78,7 @@ body {
 
 .profiles {
     display: flex;
+
     a {
         text-decoration: none;
         display: flex;
@@ -78,6 +87,7 @@ body {
         margin-bottom: 7px;
         margin-top: auto;
         width: 70px;
+
         .icon-arrow {
             font-size: 6.7px;
         }
@@ -87,7 +97,7 @@ body {
 .prof-pic {
     height: 25px;
     width: 25px;
-    background: #3072ac;
+    background: $linkBlue;
     border: 1px solid #c9d1d7;
     border-radius: 50%;
     padding-bottom: 1px;
@@ -137,6 +147,7 @@ body {
     background: #f1f2f5;
     box-sizing: border-box;
     border-radius: 2px;
+
     input {
         font-size: 14px;
         border: 0;
@@ -163,6 +174,7 @@ body {
     background: #F5F5F5;
     font-weight: 700;
     padding: 14px 0;
+
     .my-ad-link {
         text-decoration: none;
     }
@@ -197,15 +209,17 @@ body {
         display: flex;
         justify-content: space-between;
         height: 127px;
+
         .head-left {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-left: 24px;
-            margin-bottom: 16px;
+            margin: 14px 24px 16px;
+
             .left-first-row {
                 display: flex;
                 height: 63px;
+
                 .head-prof-pic-back {
                     display: flex;
                     justify-content: center;
@@ -217,6 +231,7 @@ body {
                     border-radius: 2px;
                     position: relative;
                     top: -60px;
+
                     .head-prof-pic {
                         background: url('cont/my-pic.jpg') center center;
                         background-size: contain;
@@ -227,6 +242,7 @@ body {
                 }
                 .head-prof-info {
                     margin-left: 20px;
+
                     .head-prof-name {
                         font-size: 24px;
                         color: #000;
@@ -242,7 +258,7 @@ body {
             }
 
             .go-to-site {
-                background: #3072AC;
+                background: $linkBlue;
                 border-radius: 2px;
                 text-decoration: none;
                 font-weight: bold;
@@ -253,8 +269,115 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 svg {
                     height: 12px;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .head-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .first-row {
+                display: flex;
+                justify-content: flex-end;
+
+                .prof-follow-link {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $linkDarkGrey;
+
+                    img {
+                        width: 14px;
+                        height: 12px;
+                        color: $linkDarkGrey;
+                        margin-right: 9px;
+                    }
+                }
+                .follow-more-link {
+                    width: 20px;
+                    height: 4px;
+                    color: $linkGrey;
+                    margin: 0 18px;
+                }
+            }
+            .second-row {
+                display: flex;
+                justify-content: flex-end;
+
+                .prof-pic-circle1 {
+                    width: 27px;
+                    height: 27px;
+                    background: #DDDDDD;
+                    border-radius: 50%;
+                    position: relative;
+                    right: -20px;
+                }
+                .prof-pic-circle2 {
+                    width: 27px;
+                    height: 27px;
+                    background: $linkBlack;
+                    border-radius: 50%;
+                    position: relative;
+                    right: -10px;
+                }
+                .prof-pic-circle3 {
+                    width: 27px;
+                    height: 27px;
+                    background: #DDDDDD;
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+                .connections {
+                    color: $linkBlack;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.005em;
+                    margin-left: 6px;
+                    margin-right: 14px;
+                }
+            }
+            .third-row {
+                display: flex;
+                justify-content: flex-end;
+                color: $linkBlue;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                margin-right: 32px;
+            }
+        }
+    }
+}
+
+.page-cont {
+    padding: 0;
+    margin-top: 24px;
+    .left-side-bar {
+        width: fit-content;
+        .nav {
+            flex-direction: column;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            .nav-item {
+                width: 217px;
+                height: 44px;
+                border-bottom: 1px solid #DDDDDD;
+                background: #fff;
+                a {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $linkGrey;
+                    height: inherit;
+                    padding-left: 17px;
+                }
+                .nav-link.active {
+                    border-left: 7px solid #3072ac;
                     padding-left: 10px;
                 }
             }

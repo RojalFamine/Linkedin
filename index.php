@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="instyle.css" />
   </head>
   <body>
+    <?php include_once "functions.php";?>
     <?php include "header.php"?>
     <div class="ad-cont">
       <a href="#" class="my-ad-link">Lorem Ipsum is simply -</a>
@@ -46,8 +47,22 @@
               </svg>
             </a>
           </div>
-          <div class="head-right"></div>
+          <div class="head-right">
+            <div class="first-row">
+              <a href="#" class="prof-follow-link"><img src="cont/check.svg" alt="">Following</a><a href="#" class="follow-more-link"><img src="fonts/more.svg" alt="more"></a>
+            </div>
+            <div class="second-row">
+              <div class="prof-pic-circle1"></div>
+              <div class="prof-pic-circle2"></div>
+              <div class="prof-pic-circle3"></div>
+              <span class="connections">John & 12 other connections work here</span>
+            </div>
+            <a href="#" class="third-row">See all 79 employees on LinkedIn</a>
+          </div>
         </div>
+      </div>
+      <div class="page-cont container">
+        <div class="left-side-bar"><?php include "left-side-menu.php"?></div>
       </div>
     </div>
   </body>
