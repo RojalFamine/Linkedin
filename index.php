@@ -8,10 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="instyle.css" />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <?php include_once "functions.php";?>
     <?php include "header.php"?>
     <div class="ad-cont">
@@ -63,6 +68,95 @@
       </div>
       <div class="page-cont container">
         <div class="left-side-bar"><?php include "left-side-menu.php"?></div>
+        <div class="middle-content" id="tabs">
+          <div class="middle-top">
+            <nav class="middle-nav" >
+              <ul>
+                <li><a href="#tabs-1" class="post-item active">All</a></li>
+                <li><a href="#tabs-2" class="post-item">Images</a></li>
+                <li><a href="#tabs-3" class="post-item">Documents</a></li>
+                <li><a href="#tabs-4" class="post-item">Videos</a></li>
+              </ul>
+            </nav>
+            <div class="sort">
+              <span>Sort by:</span>
+              <span class="sort-type">Top<i class="icon-arrow"></i></span>
+            </div>
+          </div>
+          <div class="middle-posts">
+            <div class="all-posts" id="tabs-1">
+              <?php include "post.php"?>
+              <?php include "post.php"?>
+              <?php include "post-doc.php"?>
+              <?php include "post-doc.php"?>
+              <?php include "post-vid.php"?>
+              <?php include "post-vid.php"?>
+            </div>
+            <div class="images-posts" id="tabs-2">
+              <?php include "post.php"?>
+              <?php include "post.php"?>
+              <?php include "post.php"?>
+            </div>
+            <div class="documents-posts" id="tabs-3">
+              <?php include "post-doc.php"?>
+              <?php include "post-doc.php"?>
+              <?php include "post-doc.php"?>
+            </div>
+            <div class="videos-posts" id="tabs-4">
+              <?php include "post-vid.php"?>
+              <?php include "post-vid.php"?>
+              <?php include "post-vid.php"?>
+            </div>
+          </div>
+
+        </div>
+        <div class="right-sidebar">
+          <div class="right-sidebar-ad">
+            <div class="ad-notice1">Ad<img class="more" src="fonts/more.svg" alt="more"></div>
+            <div class="ad-text1">Get the latest jobs and industry news</div>
+            <div class="ad-imgs">
+              <div class="ad-prof-pic"></div>
+              <img src="cont/blank.png" alt="">
+            </div>
+            <div class="ad-text2">Name, explore relevant opportunities with</div>
+            <div class="ad-name">Name</div>
+            <a href="#" class="ad-follow">Follow</a>
+          </div>
+          <div class="sim-pages">
+            <div class="sim-header">Similar pages</div>
+            <div class="sim-prof">
+              <img src="cont/sim-prof.png" alt="">
+              <div class="sim-right">
+                <div class="sim-desc">
+                  <div class="sim-name">Name</div>
+                  <div class="industry">Industry</div>
+                </div>
+                <a href="#">+ Follow</a>
+              </div>
+            </div>
+            <div class="sim-prof">
+              <img src="cont/sim-prof.png" alt="">
+              <div class="sim-right">
+                <div class="sim-desc">
+                  <div class="sim-name">Name</div>
+                  <div class="industry">Industry</div>
+                </div>
+                <a href="#">+ Follow</a>
+              </div>
+            </div>
+            <div class="sim-prof">
+              <img src="cont/sim-prof.png" alt="">
+              <div class="sim-right">
+                <div class="sim-desc">
+                  <div class="sim-name">Name</div>
+                  <div class="industry">Industry</div>
+                </div>
+                <a href="#">+ Follow</a>
+              </div>
+            </div>
+            <a href="#" class="show">Show more <img src="cont/down.svg" alt=""></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,27 +1,27 @@
 
     <ul class="nav">
       <li class="nav-item">
-        <a href="?page=home" class="nav-link <?= isPage('home'); ?>" aria-current="page">
+        <a href="#" class="nav-link active" aria-current="page" >
           Home
         </a>
       </li>
       <li class="nav-item">
-        <a href="?page=about" class="nav-link link-dark <?= isPage('about'); ?>">
+        <a href="#" class="nav-link">
           About
         </a>
       </li>
       <li class="nav-item">
-        <a href="?page=jobs" class="nav-link link-dark <?= isPage('jobs'); ?>">
+        <a href="#" class="nav-link">
           Jobs
         </a>
       </li>
       <li class="nav-item">
-        <a href="?page=people" class="nav-link link-dark <?= isPage('people'); ?>">
+        <a href="#" class="nav-link">
           People
         </a>
       </li>
       <li class="nav-item">
-        <a href="?page=ads" class="nav-link link-dark <?= isPage('ads'); ?>">
+        <a href="#" class="nav-link">
          Ads
         </a>
       </li>
